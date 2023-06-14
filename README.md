@@ -35,7 +35,7 @@ docker --version
 ```
 
 You will find out that you also have product-mock-service, which is the service where we communicate
-to get the similar products to send it to the client. In the root you have docker files:
+to get the similar products to send it to the client, in a real scenario we would have different repositories for each service, but we will do it like this for this challenge. In the root you have docker files:
 
 - Dockerfile which contains the instructions to build the spring boot service
 - docker-compose.yaml which contains the instructions to build all the infrastructure
