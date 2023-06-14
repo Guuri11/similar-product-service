@@ -46,7 +46,7 @@ Let's build it
 docker compose up -d 
 ```
 
-Access to http://localhost:5001/swagger-ui/webjars/swagger-ui/index.html to see Swagger Docs. There
+Access to http://localhost:5001/swagger-ui/webjars/swagger-ui/index.html to see Swagger Docs (maybe it takes a while the first time to start the app, check it your docker desktop watching the logs). There
 you will find the
 product controller ready to try
 
