@@ -31,6 +31,6 @@ class ProductServiceIT {
     assertThat(result).hasSize(3);
     assertThat(result)
         .extracting(ProductDto::getId)
-        .containsOnly("2", "3", "4");
+        .containsOnly("2", "4");
   }
 }

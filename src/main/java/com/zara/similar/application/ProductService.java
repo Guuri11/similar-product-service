@@ -29,6 +29,7 @@ public class ProductService {
     return getSimilarProductIds(id)
         .flatMapMany(Flux::fromIterable)
         .flatMap(pid -> getProduct(String.valueOf(pid)))
+        .filter(Product::isAvailability)
         .map(productMapper::toDto);
   }
 

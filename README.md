@@ -35,7 +35,9 @@ docker --version
 ```
 
 You will find out that you also have product-mock-service, which is the service where we communicate
-to get the similar products to send it to the client, in a real scenario we would have different repositories for each service, but we will do it like this for this challenge. In the root you have docker files:
+to get the similar products to send it to the client, in a real scenario we would have different
+repositories for each service, but we will do it like this for this challenge. In the root you have
+docker files:
 
 - Dockerfile which contains the instructions to build the spring boot service
 - docker-compose.yaml which contains the instructions to build all the infrastructure
@@ -46,7 +48,9 @@ Let's build it
 docker compose up -d 
 ```
 
-Access to http://localhost:5001/swagger-ui/webjars/swagger-ui/index.html to see Swagger Docs (maybe it takes a while the first time to start the app, check it your docker desktop watching the logs). There
+Access to http://localhost:5001/swagger-ui/webjars/swagger-ui/index.html to see Swagger Docs (maybe
+it takes a while the first time to start the app, check it your docker desktop watching the logs).
+There
 you will find the
 product controller ready to try
 
@@ -73,12 +77,6 @@ And it's response (order could be different due to non-blocking requests):
     "name": "Boots",
     "price": 39.99,
     "availability": true
-  },
-  {
-    "id": "3",
-    "name": "Blazer",
-    "price": 29.99,
-    "availability": false
   }
 ]
 ```
