@@ -14,7 +14,7 @@ import reactor.netty.tcp.TcpClient;
 @Configuration
 public class WebClientConfig {
 
-  private static final String BASE_URL = "http://host.docker.internal:3001";
+  private static final String BASE_URL = "http://localhost:3001";
   public static final int TIMEOUT = 5000;
 
   @Bean
