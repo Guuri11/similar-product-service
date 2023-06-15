@@ -28,7 +28,7 @@ class ProductServiceIT {
     final List<ProductDto> result = underTest.getSimilarProducts(1L)
         .collectList()
         .block();
-    assertThat(result).hasSize(3);
+    assertThat(result).hasSize(2);
     assertThat(result)
         .extracting(ProductDto::getId)
         .containsOnly("2", "4");
